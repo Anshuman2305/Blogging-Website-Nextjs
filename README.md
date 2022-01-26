@@ -5,6 +5,9 @@
   </a>
 </p>
 
+![Ping Me Demo](github_img/img7.png)
+
+
 >Inspired from [Medium.com](https://medium.com/). This Website is built using Next.js with TailwindCSS and Sanity.io as my CMS(Content Management System).</br></br>
 
 # Fully Responsive Website
