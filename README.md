@@ -1,11 +1,15 @@
-# Personal Blogging Website using [Next.js](https://nextjs.org/) and [Sanity.io](https://www.sanity.io/)
+<p align="center">
+  <a>
+    <img src="https://www.nicepng.com/png/full/363-3634406_am-logo-logo.png" height="128">
+    <h1 align="center">Personal Blogging Website using <a href="https://nextjs.org/">Next.js</a> and <a href="https://www.sanity.io/">Sanity.io</a></h1>
+  </a>
+</p>
 
 >Inspired from [Medium.com](https://medium.com/). This Website is built using Next.js with TailwindCSS and Sanity.io as my CMS(Content Management System).</br></br>
 
 # Fully Responsive Website
 
 ![Ping Me Demo](github_img/img1.png)
-
 
 
 ## Deploy your own
