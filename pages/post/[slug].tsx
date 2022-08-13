@@ -43,22 +43,34 @@ function Post({ post }: Props) {
       })
   }
 
+  var date = Date.parse(post._createdAt);
+
+  function format(date: string | number | Date) {
+    date = new Date(date);
+
+    var day = ('0' + date.getDate()).slice(-2);
+    var month = ('0' + (date.getMonth() + 1)).slice(-2);
+    var year = date.getFullYear();
+
+    return day + '-' + month + '-' + year;
+  }
+
   return (
     <main className="overflow-hidden">
       <Header />
 
-      
+
 
       <article className="mx-auto max-w-6xl md:p-5 font-serif text-xl">
-        <div className="bg-[#d2c3fd] p-6 py-10 md:p-10 md:rounded-lg shadow-lg">
+        <div className="bg-[#d2c3fd] p-6 py-10 md:p-10 md:rounded-lg shadow-lg text-center justify-center items-center flex flex-col">
           <h1 className="mb-3 text-2xl md:text-6xl font-bold">{post.title}</h1>
           <h2 className="mb-2 text-xl font-light text-[#3f3f3f]">
             {post.description}
           </h2>
-          <div className="mt-4 flex items-center space-x-2 bg-[#b4a3df] max-w-fit p-2 pr-5 pl-5 rounded-full">
-            <p className="text-xs md:text-lg font-extralight">
+          <div className="mt-4 flex space-x-2 bg-[#b4a3df] max-w-fit p-2 pr-5 pl-5 rounded-full">
+            <p className="text-[10px] md:text-lg font-extralight">
               By {' '}{post.author.name}{' '}
-              - Published at {new Date(post._createdAt).toLocaleString()}
+              - Published on {format(post._createdAt)}
             </p>
           </div>
 
@@ -90,7 +102,7 @@ function Post({ post }: Props) {
               ),
             }}
           />
-          
+
         </div>
       </article>
       <hr className="mx-auto my-5 max-w-lg border border-gray-300" />
