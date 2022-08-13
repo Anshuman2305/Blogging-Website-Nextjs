@@ -15,7 +15,7 @@ interface IFormInput {
 }
 
 interface Props {
-  post: Post[]
+  post: Post
 }
 
 function Post({ post }: Props) {
