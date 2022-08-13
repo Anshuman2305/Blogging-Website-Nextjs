@@ -68,7 +68,7 @@ function Post({ post }: Props) {
             {post.description}
           </h2>
           <div className="mt-4 flex space-x-2 bg-[#b4a3df] max-w-fit p-2 pr-5 pl-5 rounded-full">
-            <p className="text-[10px] md:text-lg font-extralight">
+            <p className="text-xs md:text-lg font-extralight">
               By {' '}{post.author.name}{' '}
               - Published on {format(post._createdAt)}
             </p>
