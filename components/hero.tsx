@@ -1,8 +1,8 @@
 function Hero() {
   return (
     <div
-      className="mx-auto flex max-w-7xl justify-between bg-gray-300 
-    p-5 text-black xl:rounded-xl  "
+      className="mx-auto flex max-w-6xl justify-between bg-[#d2c3fd] 
+    p-5 text-black xl:rounded-xl mt-5 shadow-lg"
     >
       <div>
         <h1 className="max-w-xl p-5 font-serif text-4xl md:text-6xl">
