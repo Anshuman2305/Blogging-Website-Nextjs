@@ -1,6 +1,5 @@
 <p align="center">
   <a>
-    <img src="https://www.nicepng.com/png/full/363-3634406_am-logo-logo.png" height="128">
     <h1 align="center">Personal Blogging Website using <a href="https://nextjs.org/">Next.js</a> and <a href="https://www.sanity.io/">Sanity.io</a></h1>
   </a>
 </p>
